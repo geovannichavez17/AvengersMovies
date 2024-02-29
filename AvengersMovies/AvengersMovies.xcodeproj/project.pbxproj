@@ -29,6 +29,8 @@
 		D38BE9F32B904BA400A7839E /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9F22B904BA400A7839E /* BaseVC.swift */; };
 		D38BE9F52B904BCC00A7839E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9F42B904BCC00A7839E /* Observable.swift */; };
 		D38BE9F72B904BFB00A7839E /* LoadingDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9F62B904BFB00A7839E /* LoadingDialogVC.swift */; };
+		D38BE9FB2B904E3900A7839E /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9FA2B904E3900A7839E /* MoviesViewModel.swift */; };
+		D38BE9FF2B904E7300A7839E /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9FE2B904E7300A7839E /* MovieDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		D38BE9F22B904BA400A7839E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		D38BE9F42B904BCC00A7839E /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		D38BE9F62B904BFB00A7839E /* LoadingDialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDialogVC.swift; sourceTree = "<group>"; };
+		D38BE9FA2B904E3900A7839E /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		D38BE9FE2B904E7300A7839E /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,7 @@
 				D38BE9EA2B904B1B00A7839E /* Navigation */,
 				D38BE9E02B904A6400A7839E /* Models */,
 				D38BE9CA2B90490E00A7839E /* Utils */,
-				D38BE9F02B904B6D00A7839E /* Moduls */,
+				D38BE9F02B904B6D00A7839E /* Modules */,
 				D38BE9B62B9042ED00A7839E /* AppDelegate.swift */,
 				D38BE9B82B9042ED00A7839E /* SceneDelegate.swift */,
 				D38BE9BA2B9042ED00A7839E /* ViewController.swift */,
@@ -167,12 +171,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		D38BE9F02B904B6D00A7839E /* Moduls */ = {
+		D38BE9F02B904B6D00A7839E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D38BE9FC2B904E4E00A7839E /* MovieDetails */,
+				D38BE9F82B904E0E00A7839E /* Movies */,
 				D38BE9F12B904B9300A7839E /* Base */,
 			);
-			path = Moduls;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		D38BE9F12B904B9300A7839E /* Base */ = {
@@ -183,6 +189,38 @@
 				D38BE9F62B904BFB00A7839E /* LoadingDialogVC.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D38BE9F82B904E0E00A7839E /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				D38BE9F92B904E1400A7839E /* ViewModels */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		D38BE9F92B904E1400A7839E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D38BE9FA2B904E3900A7839E /* MoviesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D38BE9FC2B904E4E00A7839E /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D38BE9FD2B904E5300A7839E /* ViewModels */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		D38BE9FD2B904E5300A7839E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D38BE9FE2B904E7300A7839E /* MovieDetailsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38BE9FF2B904E7300A7839E /* MovieDetailsViewModel.swift in Sources */,
 				D38BE9DD2B904A2100A7839E /* BaseService.swift in Sources */,
 				D38BE9BB2B9042ED00A7839E /* ViewController.swift in Sources */,
 				D38BE9D62B9049B400A7839E /* MoviesTarget.swift in Sources */,
@@ -277,6 +316,7 @@
 				D38BE9DA2B9049ED00A7839E /* Enums.swift in Sources */,
 				D38BE9F32B904BA400A7839E /* BaseVC.swift in Sources */,
 				D38BE9F52B904BCC00A7839E /* Observable.swift in Sources */,
+				D38BE9FB2B904E3900A7839E /* MoviesViewModel.swift in Sources */,
 				D38BE9B92B9042ED00A7839E /* SceneDelegate.swift in Sources */,
 				D38BE9EC2B904B3000A7839E /* BaseCoordinator.swift in Sources */,
 				D38BE9E62B904AB400A7839E /* VideoThumbnail.swift in Sources */,
