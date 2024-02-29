@@ -10,7 +10,6 @@
 		D38BE9B72B9042ED00A7839E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9B62B9042ED00A7839E /* AppDelegate.swift */; };
 		D38BE9B92B9042ED00A7839E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9B82B9042ED00A7839E /* SceneDelegate.swift */; };
 		D38BE9BB2B9042ED00A7839E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9BA2B9042ED00A7839E /* ViewController.swift */; };
-		D38BE9BE2B9042ED00A7839E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38BE9BC2B9042ED00A7839E /* Main.storyboard */; };
 		D38BE9C02B9042EF00A7839E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38BE9BF2B9042EF00A7839E /* Assets.xcassets */; };
 		D38BE9C32B9042EF00A7839E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38BE9C12B9042EF00A7839E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		D38BE9B62B9042ED00A7839E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D38BE9B82B9042ED00A7839E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D38BE9BA2B9042ED00A7839E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D38BE9BD2B9042ED00A7839E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D38BE9BF2B9042EF00A7839E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D38BE9C22B9042EF00A7839E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D38BE9C42B9042EF00A7839E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				D38BE9B62B9042ED00A7839E /* AppDelegate.swift */,
 				D38BE9B82B9042ED00A7839E /* SceneDelegate.swift */,
 				D38BE9BA2B9042ED00A7839E /* ViewController.swift */,
-				D38BE9BC2B9042ED00A7839E /* Main.storyboard */,
 				D38BE9BF2B9042EF00A7839E /* Assets.xcassets */,
 				D38BE9C12B9042EF00A7839E /* LaunchScreen.storyboard */,
 				D38BE9C42B9042EF00A7839E /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				D38BE9C32B9042EF00A7839E /* LaunchScreen.storyboard in Resources */,
 				D38BE9C02B9042EF00A7839E /* Assets.xcassets in Resources */,
-				D38BE9BE2B9042ED00A7839E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D38BE9BC2B9042ED00A7839E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D38BE9BD2B9042ED00A7839E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D38BE9C12B9042EF00A7839E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +280,7 @@
 				INFOPLIST_FILE = AvengersMovies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,9 +290,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.geovannichavez.AvengersMovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +311,7 @@
 				INFOPLIST_FILE = AvengersMovies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,9 +321,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.geovannichavez.AvengersMovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
