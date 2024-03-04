@@ -16,10 +16,10 @@ class MoviesCoordinator: BaseCoordinator {
     }
     
     func navigateToDetails(movie: Movie) {
-        /*let movieDetailsVC = MovieDetailsVC()
+        let movieDetailsVC = MovieDetailsVC()
         let viewModel = MovieDetailsViewModel(coordinator: self, movie: movie)
         movieDetailsVC.set(viewModel: viewModel)
-        navigationController?.pushViewController(movieDetailsVC, animated: true)*/
+        navigationController?.pushViewController(movieDetailsVC, animated: true)
     }
 }
 

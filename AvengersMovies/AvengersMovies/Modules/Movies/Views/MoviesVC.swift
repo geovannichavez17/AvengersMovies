@@ -125,8 +125,12 @@ extension MoviesVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    /*func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedItem = self.cobrosList[indexPath.row]
-        self.presenter?.select(transaction: selectedItem)
-    }*/
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let items = viewModel?.moviesDataSource.value else { return }
+        let currentItem = items[indexPath.row]
+        
+        guard let navController = self.navigationController else { return }
+        let coordinator = MoviesCoordinator(navController: navController)
+        coordinator.navigateToDetails(movie: currentItem)
+    }
 }

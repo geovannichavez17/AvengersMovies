@@ -16,8 +16,6 @@ class MovieDetailsViewModel {
     var crew: Observable<[Cast]> = Observable(nil)
     var similarFilms: Observable<[SimilarResult]> = Observable(nil)
     var streamingProvider: Observable<[WatchProvider]> = Observable(nil)
-    var rentProvider: Observable<[WatchProvider]> = Observable(nil)
-    var buyProvider: Observable<[WatchProvider]> = Observable(nil)
     var videoItems: Observable<[VideoThumbnail]> = Observable(nil)
     var isLoading: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String> = Observable(nil)
@@ -50,8 +48,6 @@ class MovieDetailsViewModel {
                 self.crew.value = response.credits.cast
                 self.similarFilms.value = response.similar.similarResults
                 self.streamingProvider.value = response.watchProviders.providerResults?.us?.flatrate
-                self.rentProvider.value = response.watchProviders.providerResults?.us?.rent
-                self.buyProvider.value = response.watchProviders.providerResults?.us?.buy
                 
                 // Get trailer videos
                 guard let videos = response.videos.videos else { return }
