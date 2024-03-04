@@ -9,10 +9,10 @@ import Foundation
 
 class MoviesCoordinator: BaseCoordinator {
     func start(animated: Bool? = nil) {
-        /*let homeVC = MoviesVC()
+        let homeVC = MoviesVC()
         let viewModel = MoviesViewModel(coordinator: self)
         homeVC.set(viewModel: viewModel)
-        navigationController!.pushViewController(homeVC, animated: true)*/
+        navigationController!.pushViewController(homeVC, animated: true)
     }
     
     func navigateToDetails(movie: Movie) {

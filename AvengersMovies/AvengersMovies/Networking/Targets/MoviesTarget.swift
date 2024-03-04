@@ -11,10 +11,7 @@ import Foundation
 
 enum MoviesTarget {
     case getMovies
-    case getNowPlaying(page: Int)
-    case getPopular(page: Int)
-    case getTopRated(page: Int)
-    case getUpcoming(page: Int)
+    case getMoviesBySearch(keyword: String)
     case getMovieDetails(movieId: String)
     case getTrailerThumbnail(movieId: String)
 }
@@ -31,14 +28,8 @@ extension MoviesTarget: BaseTarget {
     
     var path: String {
         switch self {
-        case .getNowPlaying(let page):
-            return "\(Constants.APIs.nowPlayingPaged)\(String(page))"
-        case .getPopular(let page):
-            return "\(Constants.APIs.popularPaged)\(String(page))"
-        case .getTopRated(let page):
-            return "\(Constants.APIs.topRatedPaged)\(String(page))"
-        case .getUpcoming(let page):
-            return "\(Constants.APIs.upcomingPaged)\(String(page))"
+        case .getMoviesBySearch(let keyword):
+            return "\(Constants.APIs.search)\(keyword)"
         case .getMovieDetails(let movieId):
             return "movie/\(movieId)\(Constants.APIs.movieDetails)"
         case .getMovies:
@@ -51,10 +42,7 @@ extension MoviesTarget: BaseTarget {
     var method: HTTPMethod {
         switch self {
         case .getMovies,
-             .getNowPlaying,
-             .getPopular,
-             .getTopRated,
-             .getUpcoming,
+             .getMoviesBySearch,
              .getMovieDetails:
             return .get
         case .getTrailerThumbnail:
@@ -65,10 +53,7 @@ extension MoviesTarget: BaseTarget {
     var task: Task {
         switch self {
         case .getMovies,
-             .getNowPlaying,
-             .getPopular,
-             .getTopRated,
-             .getUpcoming,
+             .getMoviesBySearch,
              .getMovieDetails:
             return .requestPlain
         case .getTrailerThumbnail:

@@ -24,6 +24,7 @@ struct Constants {
         static let profileImageUrl = "https://image.tmdb.org/t/p/w300"
         static let bannerImageUrl = "https://image.tmdb.org/t/p/w1280"
         
+        static let search = "/discover/movie?with_keywords="
         static let movies = "/movie/now_playing"
         static let nowPlayingPaged = "movie/now_playing?page="
         static let popularPaged = "movie/popular?page="
@@ -37,6 +38,7 @@ struct Constants {
         static let youTubeUrl =  "https://www.youtube.com/watch?v="
         static let thumbnailResolution = "sddefault.jpg"
         
+        static let keywordID = "180547"
         static let token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYjY1MDU2YWVjNDcxOGMwOTIxNGQ0YTdlY2NkNTg4MCIsInN1YiI6IjYwMzA3OGFhN2Y2YzhkMDAzZjBmN2FlYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.m1iwx98S8xTSrFWbDFbL2rzqaIBvNOXjcyf1ycJ9ak8"
     }
 }

@@ -42,5 +42,13 @@ extension UIColor {
     @nonobjc class var lightLayer: UIColor {
         return UIColor(red: 118.0/255.0, green: 118.0/255.0, blue: 128.00/255.0, alpha: 0.20)
     }
+    
+    @nonobjc class var ghostWhite: UIColor {
+        return UIColor(red: 248.0/255.0, green: 248.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+    }
+    
+    @nonobjc class var gold: UIColor {
+        return UIColor(red: 255.0/255.0, green: 215.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+    }
 
 }

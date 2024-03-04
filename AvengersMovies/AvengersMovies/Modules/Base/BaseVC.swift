@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum NavbarBackground {
+    case dark
+    case transparent
+}
+
 class BaseVC: UIViewController {
     
     // Globals
