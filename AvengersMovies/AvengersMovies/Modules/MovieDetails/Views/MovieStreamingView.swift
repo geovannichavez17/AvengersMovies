@@ -14,7 +14,7 @@ class MovieStreamingView: UIView {
     lazy var streamingLabel: UILabel = {
         let label = UILabel()
         label.text = "Where to watch"
-        label.textColor = .mainGreen
+        label.textColor = .gold
         label.numberOfLines = 1
         label.font = .systemFont(ofSize: 18, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false

@@ -28,7 +28,7 @@ class MovieDetailsVC: BaseVC {
     lazy var summaryLabel: UILabel = {
         let label = UILabel()
         label.text = "Summary"
-        label.textColor = .mainGreen
+        label.textColor = .gold
         label.font = .boldSystemFont(ofSize: 18)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -38,7 +38,7 @@ class MovieDetailsVC: BaseVC {
         let label = UILabel()
         label.textColor = .white
         label.textAlignment = .center
-        label.backgroundColor = .mainGreen
+        label.backgroundColor = .gold
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         label.layer.cornerRadius = 20
         label.layer.masksToBounds = true
@@ -77,7 +77,7 @@ class MovieDetailsVC: BaseVC {
     lazy var trailerLabel: UILabel = {
         let label = UILabel()
         label.text = "Trailers"
-        label.textColor = .mainGreen
+        label.textColor = .gold
         label.numberOfLines = 1
         label.font = .systemFont(ofSize: 18, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false

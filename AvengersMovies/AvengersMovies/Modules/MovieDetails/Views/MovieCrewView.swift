@@ -12,8 +12,8 @@ class MovieCrewView: UIView {
 
     lazy var crewLabel: UILabel = {
         let label = UILabel()
-        label.text = "Crew"
-        label.textColor = .mainGreen
+        label.text = "Cast"
+        label.textColor = .gold
         label.numberOfLines = 1
         label.font = .systemFont(ofSize: 18, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
